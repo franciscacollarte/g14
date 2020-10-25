@@ -1,0 +1,30 @@
+ 
+body {
+    background: CornflowerBlue; text-align: center;
+    font-family: sans-serif;
+    }
+    .content p, h2:before { content: 'Soy XS 😊';
+    }
+    @media (min-width: 576px) { body {
+    background: RebeccaPurple;
+    color: Crimson; }
+    .content p, h2:before { content: 'Soy SM 😉';
+    } }
+    @media (min-width: 768px) { body {
+    background: Crimson;
+    color: Orange; }
+    .content p, h2:before { content: 'Soy MD 😙';
+    } }
+    @media (min-width: 992px) { body {
+    background: Orange;
+    color: RebeccaPurple; }
+    .content p, h2:before { content: 'Soy LG 😜';
+    } }
+    @media (min-width: 1200px) { body {
+    background: Gold; 
+    color: Crimson;}
+    .content p, h2:before { content: 'Soy XL 😂';
+    } 
+
+   
+}
