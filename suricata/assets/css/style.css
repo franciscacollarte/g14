@@ -1,0 +1,62 @@
+body {
+    font-family:'Open Sans', sans-serif;
+}
+:root {
+    --white: #fff;
+    --pink: #e83e8c;
+    --info: #17a2b8;
+}
+.nav-link {
+    font-size: 1rem;
+}
+
+.bg-magenta {
+    background-color: var(--pink);
+    
+}
+
+.bg-turquesa {
+    background-color: var(--info);
+    padding-top: 6.688em;
+}
+h1 {
+    color: #707070;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.cardsuperior {
+   
+    padding: 10px 100px;
+}
+.cardsinferior {
+    padding: 30px 100px;
+}
+
+
+
+h2 {
+    color: var(--white);
+}
+.logo {
+    text-align: center;
+}
+
+.img-responsive {
+    width: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+        
+}
+ .container-fluid {
+    display: inline-block;
+    text-align: left;
+ }
+
+ .iconos-section {
+     display: inline-block;
+     margin-left: 20%;
+     padding-top: 0%;
+     color:var(--info);
+     
+ }
