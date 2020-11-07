@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ricomida</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS de Bootstrap 4.2.1-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!--Mi estilo-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+</head>
+
+<body>
+    <!--nav-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img src="assets/img/logo.png" alt="Logo de Ricomida"> </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Acerca de mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Trabajos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--teminonav-->
+    <!--header, poner inblok o block??-->
+    <header>
+        <div class="imagenuno">
+            <img src="Assets /img/principal.jpg" alt="pizza">
+        </div>
+        <div>
+            <h1>PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
+        </div>
+        <!--a este div ponerle borde superior-->
+        <div>
+            <h2>110 MIN / 6 A 8 PORCIONES</h2>
+        </div>
+        <div>
+            <button type="button" class="btn btn-light">Enviar por correo</button>
+            <button type="button" class="btn btn-light">Añadir a favoritos</button>
+        </div>
+    </header>
+
+    <!--carrusel-->
+    <div class="container my-5 py-3">
+        <div class="col-md-12 bg-white text-white rounded pt-5 pb-5">
+            <div id="blogcarousele" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#blogcarousele" data-slide-to="0" class="active"></li>
+                    <li data-target="#blogcarousele" data-slide-to="1"></li>
+
+                </ol>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active text-center">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="Assets /img/slider-1.png" class="d-block w-100" alt="Setas">
+                            </div>
+                            <div class="col-3">
+                                <img src="Assets /img/slider-2.png" class="d-block w-100" alt="pizza">
+                            </div>
+
+                            <div class="col-3">
+                                <img src="Assets /img/slider-3.png" class="d-block w-100" alt="masa">
+                            </div>
+
+                            <div class="col-3">
+                                <img src="Assets /img/slider-4.png" class="d-block w-100" alt="preparación pizza">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item text-center">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="Assets /img/slider-5.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-3">
+                                <img src="Assets /img/slider-6.png" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="col-3">
+                                <img src="Assets /img/slider-7.png" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="col-3">
+                                <img src="Assets /img/slider-8.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+
+                        <a class="carousel-control-prev" href="#blogcarousele" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#blogcarousele" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--termino carrusel, hay que arreglarlo-->
+        <!--section1-->
+        <section>
+            <article>
+                <!--este h2 debe ser ddel mismo tamaño que el del header y debe llevar un borde abajo-->
+                <h2>
+                    Ingredientes
+                </h2>
+                <p>
+                    Masa <br>
+
+                    210 g de harina de trigo
+                    30 g de harina de maíz
+                    1 cucharadita de sal
+                    1 cucharadita de azúcar
+                    1,5 cucharadita de levadura de panadero liofilizada
+                    130 ml de agua
+                    1 cucharada de mantequilla derretida (inicio de amasar)
+                    2 cucharadas de mantequilla en punto pomada (en el procesado de la masa)
+                    <br>
+
+
+                    1 cucharada de mantequilla
+                    2 cucharadas de cebolla rallada
+                    1 ajo rallado
+                    1 pizca de orégano seco
+                    400 g de tomate natural triturado
+                    1 cucharadita de azúcar
+                    1 cucharada de aceite de oliva
+                    Sal, pimienta negra y albahaca fresca al gusto
+
+
+                </p>
+            </article>
+            <article>
+                <h2>Preparación</h2>
+                <p>
+                    1. Hacemos la masa de pizza (I): mezclamos todos los ingredientes, excepto la mantequilla en punto
+                    pomada. Amasa ayudándote con una batidora amasadora o con las manos y forma una bola, que tendrás
+                    que impregnar de aceite de oliva y dejar reposar en un bol tapado con film transparente hasta que
+                    doble su volumen (1 h aprox).
+
+                    La forma de amasar es exactamente igual a la que usamos cuando hicimos la pizza casera a las finas
+                    hierbas.
+
+                    2. Hacemos la masa de pizza (II): una vez haya fermentado la masa, la extendemos con un rodillo
+                    hasta dejarla de 1 cm de espesor. Untamos la superficie con la mantequilla en punto pomada y
+                    enrollamos la masa como si fuera un cilindro. Volvemos a aplastar con el rodillo y formamos pliegues
+                    (lo mejor es que lo veas en el vídeo a partir del minuto 6). Finalmente, hacemos una bola y dejamos
+                    reposar unos 30 min.
+
+                    3. Hacemos la salsa de tomate: mientras que fermenta la masa tienes que aprovechar para hacer la
+                    salsa de tomate. Sofríe en mantequilla la cebolla y el ajo rallados con el orégano durante un par de
+                    minutos. Añade el tomate triturado, el azúcar, la sal, la pimienta, el aceite de oliva y un poco de
+                    albahaca freca. Deja cocinar a fuego bajo durante 15 min. Reservamos.
+
+                    4. Colocamos la masa en el molde y rellenamos (ver secuencia en foto): extendemos la masa y la
+                    acomodamos en un molde redondo (previamente untado de aceite de oliva). Añadimos el queso rallado y
+                    después la salsa de tomate (no al revés, OjO) hasta que llegue al borde de la masa. Colocamos varias
+                    rodajas de pepperoni o bien, chorizo Pamplona. Por último, espolvoreamos con un poquito de parmesano
+                    rallado.
+
+                    5. Horneamos la pizza estilo Chicago: metemos en el horno caliente a 180 ºC con calor abajo durante
+                    al menos 30 min. Vigila el horno, las paredes de la masa deben estar de color marrón, eso nos
+                    indicará que la masa por dentro está hecha. Acabamos con 5 min de gratinador y ¡listo!
+
+                    6. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur quisquam hic ullam dolore,
+                    assumenda illo exercitationem reiciendis! Exercitationem nostrum magnam esse omnis eveniet expedita
+                    unde explicabo sed ratione adipisci? Quo?
+                </p>
+           </article>
+        </section>
+        <!--section2 poner las imagenes, lleva borde superior-->
+        <section>
+
+        </section>
+
+
+
+            <!--jQuery 3.3.1 sin slim-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!--Popper JS 1.14.3-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+    <!--Bootstrap JS 4.2.1-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!--Mi script-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
