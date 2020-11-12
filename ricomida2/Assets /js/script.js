@@ -1,19 +1,12 @@
-$(function(){
+$(function () {
 
-    $("a").click(function(event){
-      if (this.hash !== "") {
-        event.preventDefault();
-  
-        var gato = this.hash;
-  
-        $("html, body").animate({
-          scrollTop: $(gato).offset().top
-        }, 800, function(){
-          window.location.hash = gato;
-        });
-      }
-    });
-  
-    $('[data-toggle="popover"]').popover();
-  
-  });
+
+    $('[data-toggle="cualquiera"]').tooltip('show');
+    $('.carousel').carousel();
+    $("#enviarCorreo").click(
+        function (){
+            $('[data-toggle="cualquiera"]').tooltip('hide')
+            alert("el correo fue enviado")
+        }
+    )
+  })

@@ -1,0 +1,10 @@
+.row {
+    display: flex;
+    width: 100%;
+   }
+.navbar-brand {
+    width: 80%;
+}
+.navbar-collapse {
+    width: 80%;
+}

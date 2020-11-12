@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Colores</title>
+    <style>
+        #box{
+            width:170px;
+            height: 170px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="box"> </div>
+    <button id="cuatrocientos">400x400 </button>
+    <button id="cien" >100x100 </button>
+    <script>
+        var caja =document.getElementById("box");
+          var aumenta = 
+          document.getElementById ("cuatrocientos")
+          cuatrocientos.setAttribute('width', '400')
+          cuatrocientos.setAttribute('height', '400')
+          var reduce = 
+          document.getElementById ("cien")
+          cien.setAttribute('width', '100')
+          cien.setAttribute('height', '100')
+
+          cuatrocientos.addEventListener('click', function() {
+              aumenta_tamaño ("cuatrocientos");
+          });
+
+          cien.addEventListener('click', function() {
+              reduce_tamaño ("cien");
+          });
+    function aumenta_tamaño (){
+        caja.style.width="400px";
+        caja.style.height="400px";
+    }     
+    function reduce_tamaño (){
+        caja.style.width="100px";
+        caja.style.height="100px";
+    }   
+
+
+    </script>
+    
+</body>
+</html>

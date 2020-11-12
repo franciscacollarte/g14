@@ -1,3 +1,37 @@
+body {
+  font-family: 'Cabin', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+.parrafodos {
+  font-family: 'Lobster', cursive;
+}
+
+
+nav, header, article {
+  text-align: left;
+  padding-left: 170px;
+}
+
+.card-deck{
+  margin-left: auto;
+  margin-right: auto;
+}
+.col1 {
+  
+  width: 50%;
+}
+.col2 {
+  
+  width: 50%;
+}
+.row {
+ display: flex;
+ width: 100%;
+}
+
+
+
 .carousel-indicators {
     top: 50px;
   }
@@ -6,5 +40,23 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
+    background-color: black;
+    margin-top: 130px;
+  }
+  .newsletter {
+    
+    height: 500px;
+  }
+  .newsletter .parrafouno {
+    
+padding-top: 100px;
+
+  }
+  footer {
+    height: 70px;
+
+  }
+  .imagenuno {
+    width: 50px;
   }
   
