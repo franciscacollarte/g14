@@ -1,0 +1,84 @@
+body {
+  font-family: 'Cabin', sans-serif;
+  margin: 0px;
+  padding: 0px;  
+}
+.navbar-brand, .parrafodos, footer {
+  font-family: 'Lobster', cursive;
+}
+.navbar-link {
+  padding-left: 740px;
+}
+header {
+  margin-top: 90px;
+  margin-bottom: 10px;  
+}
+.imagenuno {
+  width: 100%;
+}
+.hr-header{
+  width:140%;
+  border-top: 2px solid gray;
+}
+.hr-carusel {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  border-top: 2px solid gray; 
+}
+.hr-ingredientes { 
+  margin: 0px auto 50px 0px;
+  width:30%;
+  border-top: 2px solid gray; 
+}
+.hr-preparacion {
+  margin: 0px auto 50px 0px;
+  width:25%;
+  border-top: 2px solid gray; 
+}
+header .textheader {
+padding-right: 200px;
+padding-left: 0px;
+}
+.carusel {
+  width: 1080px;
+  padding: 0%;
+  margin-left: 157px;
+}
+  .carousel-indicators {
+    top: 50px;
+  }
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 130px;
+  }
+
+
+ul{
+    list-style-type:none;
+    margin-left: -35px;
+    }
+.text-preparacion {
+  margin-left: -35px;
+  padding-right: 40px;
+}
+.recetascard {
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+.hr-cards {
+  border-top: 2px solid gray;
+}
+.newsletter {  
+    height: 500px;
+    padding-top: 170px;
+  }
+footer {
+    height: 70px;
+ }
+.rojo {
+  color: red;
+}
+  
