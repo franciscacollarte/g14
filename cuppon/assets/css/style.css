@@ -19,9 +19,7 @@ background-color:#28A745;
 {
     color: #28A745;
     font-weight: 500;
-    font-size:1.25em;
-    
-    
+    font-size:1.25em;    
 }
 .footer{
     color: #707070;
@@ -38,4 +36,14 @@ background-color:#28A745;
 .formulario {
     font-weight: 300;
 }
+
+li {
+    display: inline;
+    list-style-type:none; 
+    }
+
+.list-group {
+    text-align: right;
+}
+
 
