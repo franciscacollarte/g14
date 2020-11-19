@@ -1,355 +1,415 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Francisca Collarte Videla">
-    <meta name="description" content="Portafolio desafiolatam">
-    <meta name="keywords" content="desafiolatam,html,css,javascript,jquery">
-    <title>Mi Portafolio</title>
-<!-- Bootstrap 4.1.3 CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-integrity="sha384- MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<!--Google Font: Lato (light,regular) Merriweather sans (light,regular)-->
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Merriweather+Sans:wght@300;700&display=swap" rel="stylesheet">
-<!--Font Awesome 5.6.3-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<!--Mi estilo-->
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Francisca Collarte Videla">
+  <meta name="description" content="Portafolio desafiolatam">
+  <meta name="keywords" content="desafiolatam,html,css,javascript,jquery">
+  <title>Mi Portafolio</title>
+  <!-- Bootstrap 4.1.3 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384- MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--Google Font: Lato (light,regular) Merriweather sans (light,regular)-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Merriweather+Sans:wght@300;700&display=swap"
+    rel="stylesheet">
+  <!--Font Awesome 5.6.3-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!--Mi estilo-->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- Nav-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info text-white fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#"> <i class="fas fa-book-open"></i> </a>
-  
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+  <!-- Nav-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info text-white fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"> <i class="fas fa-book-open"></i> </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Acerca de mi
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#presentacion">Presentación</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#about">Intereses</a>
+            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header: img fondo, nombre, sobre mi -->
+  <header id="presentacion" class="hero text-center pt-2 mt-5">
+    <img class="text-center" src="assets/img/foto2.png" width="300" alt="foto de Francisca">
+    <div class="container text-header">
+      <h4 class="display-4 text-dark font-weight-light my-5">Yo soy</h4>
+      <hr class="hr-header">
+      <h4 class="display-4 text-dark font-weight-bold my-5">Francisca Collarte</h4>
+      <!-- Header: sobre mi acordeon-->
+      <div class="accordion d-none d-sm-block shadow-lg " id="about">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link text-dark btn-block text-center" type="button" data-toggle="collapse"
+                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Acerca de mí
+              </button>
+            </h2>
+          </div>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#about">
+          <div class="card-body">
+            Diseñadora Industrial egresada de la Pontificia Universidad Católica de Valparaíso, con interés la
+            experiencia de usuario y el diseño sustentable.
+            Especializada en el area del diseño gráfico y editorial, creación de elementos gráficos y branding para
+            distintas marcas.
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-lg btn-info mt-4" data-toggle="popover" data-placement="bottom"
+      title="Noviembre 2020" data-content="Cursando la carrera de UX/UI en Desafío Latam">¿En qué me encuentro
+      actualmente?</button>
+
+  </header>
+
+  <!--Body parrafos-->
+  <section id="about" class="container d-none d-sm-block text-left my-5">
+    <h5 class="display-5 font-weight-bold mt-4 mb-5">Más acerca de mi</h5>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <p>Diseñadora Industrial de profesión, egresada el 2018, desde ahí me he desarrollado en distintas areas del
+          diseño, como fabricación digital, diseño gráfico/editorial y fotografía de objetos.
+          Actualmente enfocada en complementar mis estudios para poder desarrollarme como diseñadora UX UI, en la
+          academia Desafío Latam.
+        </p>
+
+      </div>
+
+
+      <div class="col-lg-6 parrafodos">
+        <h6 class="font-weight-bold my-4 mb-0">Intereses</h6>
+        <ul>
+          <li>Diseño sustentable</li><br>
+          <li>Biomateriales</li><br>
+          <li>Experiencia de usuario</li><br>
+          <li>Fotografía</li><br>
+          <li>Ilustración botánica</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--Body experiencia: iconos y descripcion-->
+  <section id="experience" class="container text-center experience">
+    <hr class="hr-experience">
+    <h2 class="display-4 font-weight-bold text-dark mb-3 pb-5 text-titulo">Experiencia</h2>
+    <div class="row">
+      <div class="col-lg-4">
+        <i class="fas fa-cube fa-3x my-3" data-container="body" data-toggle="popover" data-trigger="hover"
+          data-placement="top" data-content="Inventor Autodesk"></i>
+        <h6 class="my-3 font-weight-bold">Modelado 3D y fabricación digital</h6>
+        <p class="my-3 font-weight-light">Modelado 3D en Inventor Autodesk, para proyectos de creación de matrices,
+          utilizadas para verter plásticos reutilizados de las playas de la V Región.</p>
+      </div>
+      <div class="col-lg-4">
+        <i class="fas fa-laptop fa-3x my-3" data-container="body" data-toggle="popover" data-trigger="hover"
+          data-placement="top" data-content="Illustrator, Adobe Indesign, Adobe Illustrator"></i>
+        <h6 class="my-3 font-weight-bold">Creación de elementos gráficos</h6>
+        <p class="my-3 font-weight-light">Branding, creación de elementos gráficos, y creación de contenidos para redes
+          sociales de distintos emprendimientos.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-camera fa-3x my-3" data-container="body" data-toggle="popover" data-trigger="hover"
+          data-placement="top" data-content="Análoga y digital"></i>
+        <h6 class="my-3 font-weight-bold">Fotógrafa de objetos</h6>
+        <p class="my-3 font-weight-light">Fotografía, especialmente de productos, con cámara digital y análoga.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!--Body mis trabajos: cards-->
+  <section class="container-fluid my-5 p-5 bg-info" id="work">
+    <h2 class="display-4 text-center font-weight-bold text-light mb-3 pb-5 text-titulo">Mis trabajos</h2>
+
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/card1.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center py-5">Meet&Coffee</h4>
+
+          <button type="button" class="btn btn-outline-info button-centrado" data-toggle="modal"
+            data-target="#meetandcoffee">Ver más</button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/img/card2.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center py-5">Iguana Page</h4>
+          <button type="button" class="btn btn-outline-info button-centrado" data-toggle="modal"
+            data-target="#iguanapage">Ver más</button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/img/card4.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center py-5">Suricata</h4>
+          <button type="button" class="btn btn-outline-info button-centrado" data-toggle="modal"
+            data-target="#suricata">Ver más</button>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck pt-5">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/card3.png" alt="desafío meetandcoffee">
+        <div class="card-body">
+          <h4 class="card-title text-center py-5">Cuppon</h4>
+          <button type="button" class="btn btn-outline-info button-centrado" data-toggle="modal"
+            data-target="#cuppon">Ver más</button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/img/card5.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center py-5">Ricomida</h4>
+          <button type="button" class="btn btn-outline-info button-centrado" data-toggle="modal"
+            data-target="#ricomida">Ver más</button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/img/card6.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center py-5">Mi Portafolio</h4>
+          <button type="button" class="btn btn-outline-info button-centrado" data-toggle="modal"
+            data-target="#portafolio">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Body mis trabajos: cards Modal-->
+  <div class="modal fade" id="meetandcoffee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Meet&Coffee</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
           </button>
-  
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Acerca de mi
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#presentacion">Presentación</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#about">Intereses</a>
-                    </div>
-              <li class="nav-item">
-                <a class="nav-link" href="#experience">Experiencia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#work">Trabajos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contacto</a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </nav>
-     <!-- Header: img fondo, nombre, sobre mi -->
-      <header id="presentacion" class="hero text-center pt-2 mt-5">
-          <img class="text-center" src="assets/img/foto2.png" width="300" alt="foto de Francisca">
-        <div class="container text-header">
-          <h4 class="display-4 text-dark font-weight-light my-5">Yo soy</h4>
-          <hr class="hr-header">
-          <h4 class="display-4 text-dark font-weight-bold my-5">Francisca Collarte</h4>
-         <!-- Header: sobre mi acordeon-->
-          <div class="accordion d-none d-sm-block shadow-lg " id="about">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="btn btn-link text-dark btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
-                    Acerca de mí
-                  </button>
-                </h2>
-              </div>
-            </div>
-          
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#about">
-                <div class="card-body">
-                    Diseñadora Industrial egresada de la Pontificia Universidad Católica de Valparaíso, con interés la experiencia de usuario y el diseño sustentable. 
-                    Especializada en el area del diseño gráfico y editorial, creación de elementos gráficos y branding para distintas marcas. 
-                </div>
-              </div>
-            </div>
+        <div class="modal-body">
+          <img class="img-fluid mb-3" src="assets/img/card1.png" alt="Card image cap">
+
+          <p>El desafío consta de aplicar los conceptos aprendidos de HTML y CSS, construyendo dos páginas del proyecto
+            Meet&Coffe. Se utilizan dos tipografías con sus respectivos pesos, colores e íconos de Font Awesome, todo
+            esto siguiendo un layout presentado en el desafío.</p>
         </div>
-        <button type="button" class="btn btn-lg btn-info mt-4" data-toggle="popover" data-placement="bottom" title="Noviembre 2020" data-content="Cursando la carrera de UX/UI en Desafío Latam">¿En qué me encuentro actualmente?</button>
-        
-      </header>
-
-     <!--Body parrafos-->
-     <section id="about" class="container d-none d-sm-block text-left my-5">
-         <h5 class="display-5 font-weight-bold mt-4 mb-5">Más acerca de mi</h5>
-         
-        <div class="row">
-            <div class="col-lg-6">
-                <p>Diseñadora Industrial de profesión, egresada el 2018, desde ahí me he desarrollado en distintas areas del diseño, como fabricación digital, diseño gráfico/editorial y fotografía de objetos.
-                Actualmente enfocada en complementar mis estudios para poder desarrollarme como diseñadora UX UI, en la academia Desafío Latam. 
-                </p>
-
-            </div>
-            
-             
-            <div class="col-lg-6 parrafodos">
-                <h6 class="font-weight-bold my-4 mb-0">Intereses</h6>
-                <ul>
-                    <li>Diseño sustentable</li><br>
-                    <li>Biomateriales</li><br>
-                    <li>Experiencia de usuario</li><br>
-                    <li>Fotografía</li><br>
-                    <li>Ilustración botánica</li>
-                </ul>
-
-            </div>
-        </div>
-     </section>
-     
-
-      <!--Body experiencia: iconos y descripcion-->
-        <section id="experience" class="container text-center experience">
-            <hr class="hr-experience">
-            <h2 class="display-4 font-weight-bold text-dark mb-3 pb-5 text-titulo">Experiencia</h2>
-            <div class="row">
-                <div class="col-lg-4">
-                    <i class="fas fa-cube fa-3x my-3" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Inventor Autodesk"></i>
-                    <h6 class="my-3 font-weight-bold">Modelado 3D y fabricación digital</h6>
-                    <p class="my-3 font-weight-light">Modelado 3D en Inventor Autodesk, para proyectos de creación de matrices, utilizadas para verter plásticos reutilizados de las playas de la V Región.</p>
-                </div>
-                <div class="col-lg-4">
-                    <i class="fas fa-laptop fa-3x my-3" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Illustrator, Adobe Indesign, Adobe Illustrator"></i>
-                    <h6 class="my-3 font-weight-bold">Creación de elementos gráficos</h6>
-                    <p class="my-3 font-weight-light">Branding, creación de elementos gráficos, y creación de contenidos para redes sociales de distintos emprendimientos.</p>
-                </div>
-                <div class="col-md-4">
-                    <i class="fas fa-camera fa-3x my-3" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Análoga y digital"></i>
-                    <h6 class="my-3 font-weight-bold">Fotógrafa de objetos</h6>
-                    <p class="my-3 font-weight-light">Fotografía, especialmente de productos, con cámara digital y análoga.</p>
-                  </div>
-            </div>
-
-        </section>
-
-      <!--Body mis trabajos: cards-->
-      <section class="container-fluid my-5 p-5 bg-info" id="work">
-        <h2 class="display-4 text-center font-weight-bold text-light mb-3 pb-5 text-titulo">Mis trabajos</h2>
-        
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="assets/img/card1.png" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title text-center py-5">Meet&Coffee</h4>
-              
-              <button type="button" class="btn btn-outline-info button-centrado" data-toggle="modal" data-target="#meetandcoffee">Ver más</button>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="assets/img/card2.png" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title text-center py-5">Iguana Page</h4>
-              <button type="button" class="btn btn-outline-info button-centrado" data-toggle="modal" data-target="#iguanapage">Ver más</button>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="assets/img/card4.png" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title text-center py-5">Suricata</h4>
-              <button type="button" class="btn btn-outline-info button-centrado" data-toggle="modal" data-target="#suricata">Ver más</button>
-            </div>
-          </div>
-        </div>
-        <div class="card-deck pt-5">
-            <div class="card">
-              <img class="card-img-top" src="assets/img/card3.png" alt="desafío meetandcoffee">
-              <div class="card-body">
-                <h4 class="card-title text-center py-5">Cuppon</h4>
-                <button type="button" class="btn btn-outline-info button-centrado"  data-toggle="modal" data-target="#cuppon">Ver más</button>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="assets/img/card5.png" alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title text-center py-5">Ricomida</h4>
-                <button type="button" class="btn btn-outline-info button-centrado" data-toggle="modal" data-target="#ricomida">Ver más</button>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="assets/img/card6.png" alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title text-center py-5">Mi Portafolio</h4>
-                <button type="button" class="btn btn-outline-info button-centrado" data-toggle="modal" data-target="#portafolio">Ver más</button>
-              </div>
-            </div>
-          </div>
-      </section>
-      <!--Body mis trabajos: cards Modal-->
-      <div class="modal fade" id="meetandcoffee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Meet&Coffee</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid mb-3" src="assets/img/card1.png" alt="Card image cap">
-  
-              <p>El desafío consta de aplicar los conceptos aprendidos de HTML y CSS, construyendo dos páginas del proyecto Meet&Coffe. Se utilizan dos tipografías con sus respectivos pesos, colores e íconos de Font Awesome, todo esto siguiendo un layout presentado en el desafío.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
         </div>
       </div>
-  
-      <div class="modal fade" id="iguanapage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Iguana Page</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid mb-3" src="assets/img/card2.png" alt="Card image cap">
-  
-              <p>El desafío se trata de construir una página desde cero, practicando los conceptos de HTML y CSS. Iguana Page cuenta con distintas fotografías que deben ser colocadas en el DOM, con sus tamaños correspondientes, para que la página quede lo más similar a la maqueta presentada.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="iguanapage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Iguana Page</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid mb-3" src="assets/img/card2.png" alt="Card image cap">
+
+          <p>El desafío se trata de construir una página desde cero, practicando los conceptos de HTML y CSS. Iguana
+            Page cuenta con distintas fotografías que deben ser colocadas en el DOM, con sus tamaños correspondientes,
+            para que la página quede lo más similar a la maqueta presentada.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
         </div>
       </div>
-  
-      <div class="modal fade" id="suricata" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Suricata</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid mb-3" src="assets/img/card4.png" alt="Card image cap">
-  
-              <p>Este desafío reune los conceptos estudiados de HTML, CSS y Bootstrap, complementandolos y poniendolos en práctica en este desafío. La idea es construir una página con layout responsivo, considerando la filosofía Mobile First, utilizando distintas clases utilitarias de Bootstrap.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="suricata" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Suricata</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid mb-3" src="assets/img/card4.png" alt="Card image cap">
+
+          <p>Este desafío reune los conceptos estudiados de HTML, CSS y Bootstrap, complementandolos y poniendolos en
+            práctica en este desafío. La idea es construir una página con layout responsivo, considerando la filosofía
+            Mobile First, utilizando distintas clases utilitarias de Bootstrap.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="modal fade" id="cuppon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Cuppon</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid mb-3" src="assets/img/card3.png" alt="Card image cap">
-  
-              <p>Aplicando todos los conceptos y herramientas aprendidas se construye la página de
-                "Cuppon", guiándonos solamente por el mockup de la vista mobile. El concepto más importante en este caso es el de Mobile First, donde lo esencial es apuntar a diseñar prioritariamente la visualización y estructura del sitio en dispositivos móviles.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
+  <div class="modal fade" id="cuppon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cuppon</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid mb-3" src="assets/img/card3.png" alt="Card image cap">
+
+          <p>Aplicando todos los conceptos y herramientas aprendidas se construye la página de
+            "Cuppon", guiándonos solamente por el mockup de la vista mobile. El concepto más importante en este caso es
+            el de Mobile First, donde lo esencial es apuntar a diseñar prioritariamente la visualización y estructura
+            del sitio en dispositivos móviles.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="modal fade" id="ricomida" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Ricomida</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid mb-3" src="assets/img/card5.png" alt="Card image cap">
-  
-              <p>Este desafío permitió practicar las habilidades adquiridas en relación con HTML, CSS, Bootstrap y jQuery. Consiste en la construcción de una página web relacionada con la preparación de comidas, la cual se debe adapatar a cualquier dispositivo. Utilizamos componentes de Bootstrap que requieren incorporación de JQuery, además de las interacciones que se activaran con eventos provocados por el usuario.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
+  <div class="modal fade" id="ricomida" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ricomida</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid mb-3" src="assets/img/card5.png" alt="Card image cap">
+
+          <p>Este desafío permitió practicar las habilidades adquiridas en relación con HTML, CSS, Bootstrap y jQuery.
+            Consiste en la construcción de una página web relacionada con la preparación de comidas, la cual se debe
+            adapatar a cualquier dispositivo. Utilizamos componentes de Bootstrap que requieren incorporación de JQuery,
+            además de las interacciones que se activaran con eventos provocados por el usuario.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="modal fade" id="portafolio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Mi Portafolio</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid mb-3" src="assets/img/card" alt="Card image cap">
-  
-              <p>Esta última prueba reune todos los conceptos aprendidos en esta étapa de Fundamentos de Desarrollo Web. Se construye un landing page, este será un portafolio web que integre todas los desafíos realizados
-                anteriormente. Debe ser responsivo, tener una grilla, componentes y clases utilitarias de Bootstrap, con y sin Javascript.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
+  <div class="modal fade" id="portafolio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Mi Portafolio</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid mb-3" src="assets/img/card" alt="Card image cap">
+
+          <p>Esta última prueba reune todos los conceptos aprendidos en esta étapa de Fundamentos de Desarrollo Web. Se
+            construye un landing page, este será un portafolio web que integre todas los desafíos realizados
+            anteriormente. Debe ser responsivo, tener una grilla, componentes y clases utilitarias de Bootstrap, con y
+            sin Javascript.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
         </div>
       </div>
+    </div>
+  </div>
 
-      <!--Body contacto:typeform-->
-      
-    
+  <!--Body contacto:typeform-->
 
-      <!--Body footer-->
-      <footer class="container-fluid bg-info py-2 fixed-bottom">
-          <div class="row">
-              <div class="col-lg-6 text-center">
-                  <h3 class="text-white font-weight-bold">FCV</h3>
-              </div>
-              <div class="col-lg-6 text-center d-inline-block">
-                  <a class="text-dark" href="https://www.facebook.com/"><span class="rrss"><i class="fab fa-facebook fa-2x mr-4"></i></span></a>
+  <section class="container text-titulo my-5 " id="contact">
+    <h2 class="display-4 text-center font-weight-bold">Contacto</h2>
+    <h3 class="py-5 text-center font-weight-light">¿Quieres conocer más de mi?</h3>
+    <div class="typeform-widget" data-url="https://form.typeform.com/to/MmoJBVyv" style="width: 100%; height: 500px;">
+    </div>
+    <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+    <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a
+        href="https://admin.typeform.com/signup?utm_campaign=MmoJBVyv&utm_source=typeform.com-01EQD7PFPTCXATN8NKABYE7G0K-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN"
+        style="color: #999" target="_blank">Typeform</a> </div>
+  </section>
 
-                  <a class="text-dark" href="https://www.linkedin.com/in/francisca-collarte-videla-56a817191/"><span class="rrss"><i class="fab fa-linkedin-in fa-2x mr-4"></i></span></a>
+  <!--Body footer-->
+  <footer class="container-fluid bg-info py-2 fixed-bottom">
+    <div class="row">
+      <div class="col-lg-6 text-center">
+        <h3 class="text-white font-weight-bold">FCV</h3>
+      </div>
+      <div class="col-lg-6 text-center d-inline-block">
+        <a class="text-dark" href="https://www.facebook.com/"><span class="rrss"><i
+              class="fab fa-facebook fa-2x mr-4"></i></span></a>
 
-                  <a class="text-dark" href="https://github.com/franciscacollarte"><span class="rrss"><i class="fab fa-github fa-2x mr-4"></i></i></span></a>
+        <a class="text-dark" href="https://www.linkedin.com/in/francisca-collarte-videla-56a817191/"><span
+            class="rrss"><i class="fab fa-linkedin-in fa-2x mr-4"></i></span></a>
 
-                  <a class="text-dark" href="https://www.instagram.com/"><span class="rrss"><i class="fab fa-instagram fa-2x mr-4"></i></span></a>
-              </div>
-          </div>        
-      </footer>
+        <a class="text-dark" href="https://github.com/franciscacollarte"><span class="rrss"><i
+              class="fab fa-github fa-2x mr-4"></i></i></span></a>
 
-    <!--jQuery 3.3.1-->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-
+        <a class="text-dark" href="https://www.instagram.com/"><span class="rrss"><i
+              class="fab fa-instagram fa-2x mr-4"></i></span></a>
+      </div>
+    </div>
+  </footer>
+
+  <!--jQuery 3.3.1-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-
 FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
 </script>
-<!--Popper JS 1.14.3-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<!--Bootstrap JS 4.1.3-->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384- ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!--Popper JS 1.14.3-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <!--Bootstrap JS 4.1.3-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384- ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
-<!-- Mi script -->
-<script src="assets/javascript/script.js"></script>
+  <!-- Mi script -->
+  <script src="assets/javascript/script.js"></script>
 </body>
+
 </html>
