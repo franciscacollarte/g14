@@ -17,8 +17,29 @@ header .hr-header {
   width:30%;
   border-top: 3px solid white;
 }
-.text-header {
+.text-header, .text-titulo{
     font-family: 'Merriweather Sans', sans-serif;
     padding-top: 20px;
 }
 
+.parrafodos{
+  margin-top: -60px;
+}
+ul {
+  list-style-type:none;
+    margin-left: -35px;
+}
+.hr-experience {
+  width: 100%;
+  border-top: 2px solid black;
+  padding-top: 30px;
+}
+.experience {
+ padding-top: 100px;
+}
+
+.button-centrado{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -4,12 +4,7 @@ $(function(){
       
     $('[data-toggle="popover"]').popover();
 
-    $(".card-title").click(
-        function (){
-            $('.card-text').toggle()
-            
-        }
-    )
+   
 
   });
   
